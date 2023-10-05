@@ -27,21 +27,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     >
 
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
   
     <title>REA | Real Estate Agency</title>
   </head>
   <body>
     <div class="top-container ">
       <video id="video" autoplay loop muted class="backVideo">
-        <source src="video/video2.mp4" type="video/mp4" />
+        <source src="video/video.mp4" type="video/mp4" />
       </video>
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"
             ><img
-              src="images/LOGOREA.png"
+              src="images/realogo.png"
               width="100"
               height="80"
               class="d-inline-block align-text-top"
@@ -83,17 +83,20 @@
       </nav>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
+      <div class="overlay"></div>
+
       <div class="content">
-        <img class="logo" src="images/LOGOREA.png" alt="REA LOGOREA" />
-        <p class="title" id="animation">We shape lifestyles.</p>
+        <img class="logo" src="images/realogo.png" alt="REA LOGOREA" />
+        <h1 class="title ml12" id="animation">We shape lifestyles.</h1>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
       </div>
     </div>
 
     <!--CONTENT-->
 
     <div class="middle-container ">
-      <div class="about-grid-container">
-        <div class="about-grid-item">
+      <div class="about-flex-container">
+        <div class="about-left-item">
           <h2 id="about-us">About Us</h2>
           <p>
             REA is a development company, that offers a high quality
@@ -109,59 +112,34 @@
             REA is committed to protecting the environment and ensuring the sustainability of our communities.
             We are aware of the importance of preserving natural resources and work to implement practices that are environmentally sustainable. Our goal is to create harmony between economic development and environmental sustainability.
           </p>
-        </div>
-      
-        <div class="about-grid-item">
-          <img  src="images/fourSeason.png" alt=""> 
-          <img src="images/Proestate.png" alt="Sea Breeze Bay" >
-        </div>
-
-        <div class="grid-item">
           <div class="divider">
             <hr>
           </div>
-    
           <a href="contact.html" class="button"> Contact Us </a>
         </div>
+       
+        <div class="about-right-item">
+          <img  src="images/fourSeason.png" alt="Four Season"> 
+          <img src="images/Proestate.png" alt="Pro Estate" >
+        </div>
+        
       </div>
 
-    
-      <br>
-      <br>
-      <br>
-
-      <svg
-        id="wave"
-        style="transform: rotate(0deg); transition: 0.3s"
-        viewBox="0 0 1440 140"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-            <stop stop-color="rgba(52, 77, 103, 1)" offset="0%"></stop>
-            <stop stop-color="rgba(52, 77, 103, 1)" offset="100%"></stop>
-          </linearGradient>
-        </defs>
-        <path
-          style="transform: translate(0, 0px); opacity: 1"
-          fill="url(#sw-gradient-0)"
-          d="M0,70L40,65.3C80,61,160,51,240,49C320,47,400,51,480,44.3C560,37,640,19,720,28C800,37,880,75,960,91C1040,107,1120,103,1200,100.3C1280,98,1360,98,1440,81.7C1520,65,1600,33,1680,32.7C1760,33,1840,65,1920,72.3C2000,79,2080,61,2160,49C2240,37,2320,33,2400,42C2480,51,2560,75,2640,70C2720,65,2800,33,2880,32.7C2960,33,3040,65,3120,70C3200,75,3280,51,3360,46.7C3440,42,3520,56,3600,65.3C3680,75,3760,79,3840,79.3C3920,79,4000,75,4080,63C4160,51,4240,33,4320,25.7C4400,19,4480,23,4560,25.7C4640,28,4720,28,4800,35C4880,42,4960,56,5040,58.3C5120,61,5200,51,5280,58.3C5360,65,5440,89,5520,91C5600,93,5680,75,5720,65.3L5760,56L5760,140L5720,140C5680,140,5600,140,5520,140C5440,140,5360,140,5280,140C5200,140,5120,140,5040,140C4960,140,4880,140,4800,140C4720,140,4640,140,4560,140C4480,140,4400,140,4320,140C4240,140,4160,140,4080,140C4000,140,3920,140,3840,140C3760,140,3680,140,3600,140C3520,140,3440,140,3360,140C3280,140,3200,140,3120,140C3040,140,2960,140,2880,140C2800,140,2720,140,2640,140C2560,140,2480,140,2400,140C2320,140,2240,140,2160,140C2080,140,2000,140,1920,140C1840,140,1760,140,1680,140C1600,140,1520,140,1440,140C1360,140,1280,140,1200,140C1120,140,1040,140,960,140C880,140,800,140,720,140C640,140,560,140,480,140C400,140,320,140,240,140C160,140,80,140,40,140L0,140Z"
-        ></path>
-      </svg>
-
-      <div class="projects-container " id="our-projects">
-        <h1>Our projects</h1>
+     
+      <!-- <div class="naslovi">
+        <h2>Our Projects</h2>
         <h3>Townhomes designed for happines</h3>
-        <div class="grid-container">
-          <article class="featured">
-            <img
-              class="grid-images"
-              src="images/fourSeason.png"
-              alt="Sunset Lagoon"
-            >
-            <div class="grid-row">
-              <h3>Four Seasons</h3>
+      </div> -->
+        <div class="project-container">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="elementor-shape-fill" d="M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9"></path></svg>
+          <h2>Our Projects</h2>
+          <h3>Townhomes designed for happines</h3>
+       
+        <div class="project-flex-container">
+
+          <div class="project-left-item">
+            <img class="project-images" src="images/fourSeason.png" alt="Four Season logo">
+            <h3>Four Seasons</h3>
               <div class="divider">
                 <hr>
               </div>
@@ -174,56 +152,34 @@
                 on the olive hill and surrounded by nature, with the
                 lake and mountain views.
               </p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="images/Proestate.png"
-              alt="Sea Breeze Bay"
-              class="grid-images"
-            />
-            <div class="column2">
+          </div>
+
+          <div class="project-right-item">
+            <img src="images/Proestate.png" alt="Pro estate logo" class="project-images"/>
               <h3>Pro Estate</h3>
               <div class="divider">
                 <hr />
-              </div>
-              <p class="paragraph">
-                Offers 9 townhomes built in three separate buildings, with 4
-                bedrooms of classic or modern design.
-              </p>
-              <p class="paragraph">
-                Located in Garda, on a hill with
-                spectacular views of lake.
-              </p>
+                </div>
+                <p class="paragraph">
+                  Offers 9 townhomes built in three separate buildings, with 4
+                  bedrooms of classic or modern design.
+                </p>
+                <p class="paragraph">
+                  Located in Garda, on a hill with
+                  spectacular views of lake.
+                </p>
             </div>
-          </article>
         </div>
-      </div>
-
-      <svg
-        id="wave2"
-        style="transform: rotate(180deg); transition: 0.3s"
-        viewBox="0 0 1440 140"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
-            <stop stop-color="rgba(52, 77, 103, 1)" offset="0%"></stop>
-            <stop stop-color="rgba(52, 77, 103, 1)" offset="100%"></stop>
-          </linearGradient>
-        </defs>
-        <path
-          style="transform: translate(0, 0px); opacity: 1"
-          fill="url(#sw-gradient-0)"
-          d="M0,70L40,65.3C80,61,160,51,240,49C320,47,400,51,480,44.3C560,37,640,19,720,28C800,37,880,75,960,91C1040,107,1120,103,1200,100.3C1280,98,1360,98,1440,81.7C1520,65,1600,33,1680,32.7C1760,33,1840,65,1920,72.3C2000,79,2080,61,2160,49C2240,37,2320,33,2400,42C2480,51,2560,75,2640,70C2720,65,2800,33,2880,32.7C2960,33,3040,65,3120,70C3200,75,3280,51,3360,46.7C3440,42,3520,56,3600,65.3C3680,75,3760,79,3840,79.3C3920,79,4000,75,4080,63C4160,51,4240,33,4320,25.7C4400,19,4480,23,4560,25.7C4640,28,4720,28,4800,35C4880,42,4960,56,5040,58.3C5120,61,5200,51,5280,58.3C5360,65,5440,89,5520,91C5600,93,5680,75,5720,65.3L5760,56L5760,140L5720,140C5680,140,5600,140,5520,140C5440,140,5360,140,5280,140C5200,140,5120,140,5040,140C4960,140,4880,140,4800,140C4720,140,4640,140,4560,140C4480,140,4400,140,4320,140C4240,140,4160,140,4080,140C4000,140,3920,140,3840,140C3760,140,3680,140,3600,140C3520,140,3440,140,3360,140C3280,140,3200,140,3120,140C3040,140,2960,140,2880,140C2800,140,2720,140,2640,140C2560,140,2480,140,2400,140C2320,140,2240,140,2160,140C2080,140,2000,140,1920,140C1840,140,1760,140,1680,140C1600,140,1520,140,1440,140C1360,140,1280,140,1200,140C1120,140,1040,140,960,140C880,140,800,140,720,140C640,140,560,140,480,140C400,140,320,140,240,140C160,140,80,140,40,140L0,140Z"
-        ></path>
-      </svg>
-     
-        <div class="great-location-grid-container">
-          <div class="grid-item">
+       </div>
+       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="elementor-shape-fill" d="M761.9,44.1L643.1,27.2L333.8,98L0,3.8V0l1000,0v3.9"></path></svg>
+        <div class="greatlocation-flex-container">
+          
+          <div class="left-item">
             <h2 id="great-location">Great locations</h2>
-            <p>
+          </div>
+
+          <div class="right-item">
+          <p>
               We are privileged to list one of Steyn City's best homes, designed by renowned SBE Africa architects and
               as featured in the December edition of the South African Home Owner magazine. Light and flow are the key
               elements which bring this home together.
@@ -241,238 +197,172 @@
           </div>
         </div>
 
-      <div class="why-us-grid-container">
-        <div class="why-us-grid-item">
-          <h2 id="why-us">Why Us?</h2>
-        </div>
-        <div class="why-us-grid-item">
-          <p>Looking for a reliable and experienced real estate company to help you buy or sell your home? 
-            Look no further than REA! Our team of highly-skilled and knowledgeable agents have a deep understanding of the local market and are 
-            dedicated to providing our clients with the best possible service.</p>
-          <p> At REA, we don't just see ourselves as a real estate company, but a company that aligns with the values of our clients and
-             provide a culture where they feel comfortable. We understand that buying or selling a home is one of the most important decisions 
-             you'll make, and we're here to make it as enjoyable as possible.
-          </p>
-          <p>
-            Don't hesitate, choose REA for your next real estate transaction and experience the difference that a dedicated, experienced 
-            and values-driven team can make. Contact us today to schedule a consultation!
-          </p>
+        <div class="why-us-flex-container">
+          <div class="left-item">
+            <p>Looking for a reliable and experienced real estate company to help you buy or sell your home? 
+              Look no further than REA! Our team of highly-skilled and knowledgeable agents have a deep understanding of the local market and are 
+              dedicated to providing our clients with the best possible service.</p>
+            <p> At REA, we don't just see ourselves as a real estate company, but a company that aligns with the values of our clients and
+               provide a culture where they feel comfortable. We understand that buying or selling a home is one of the most important decisions 
+               you'll make, and we're here to make it as enjoyable as possible.
+            </p>
+            <p>
+              Don't hesitate, choose REA for your next real estate transaction and experience the difference that a dedicated, experienced 
+              and values-driven team can make. Contact us today to schedule a consultation!
+            </p>
           </div>
-      </div>
 
-      <svg
-        id="wave3"
-        style="transform: rotate(0deg); transition: 0.3s"
-        viewBox="0 0 1440 140"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
-            <stop stop-color="rgba(52, 77, 103, 1)" offset="0%"></stop>
-            <stop stop-color="rgba(52, 77, 103, 1)" offset="100%"></stop>
-          </linearGradient>
-        </defs>
-        <path
-          style="transform: translate(0, 0px); opacity: 1"
-          fill="url(#sw-gradient-0)"
-          d="M0,70L40,65.3C80,61,160,51,240,49C320,47,400,51,480,44.3C560,37,640,19,720,28C800,37,880,75,960,91C1040,107,1120,103,1200,100.3C1280,98,1360,98,1440,81.7C1520,65,1600,33,1680,32.7C1760,33,1840,65,1920,72.3C2000,79,2080,61,2160,49C2240,37,2320,33,2400,42C2480,51,2560,75,2640,70C2720,65,2800,33,2880,32.7C2960,33,3040,65,3120,70C3200,75,3280,51,3360,46.7C3440,42,3520,56,3600,65.3C3680,75,3760,79,3840,79.3C3920,79,4000,75,4080,63C4160,51,4240,33,4320,25.7C4400,19,4480,23,4560,25.7C4640,28,4720,28,4800,35C4880,42,4960,56,5040,58.3C5120,61,5200,51,5280,58.3C5360,65,5440,89,5520,91C5600,93,5680,75,5720,65.3L5760,56L5760,140L5720,140C5680,140,5600,140,5520,140C5440,140,5360,140,5280,140C5200,140,5120,140,5040,140C4960,140,4880,140,4800,140C4720,140,4640,140,4560,140C4480,140,4400,140,4320,140C4240,140,4160,140,4080,140C4000,140,3920,140,3840,140C3760,140,3680,140,3600,140C3520,140,3440,140,3360,140C3280,140,3200,140,3120,140C3040,140,2960,140,2880,140C2800,140,2720,140,2640,140C2560,140,2480,140,2400,140C2320,140,2240,140,2160,140C2080,140,2000,140,1920,140C1840,140,1760,140,1680,140C1600,140,1520,140,1440,140C1360,140,1280,140,1200,140C1120,140,1040,140,960,140C880,140,800,140,720,140C640,140,560,140,480,140C400,140,320,140,240,140C160,140,80,140,40,140L0,140Z"
-        ></path>
-      </svg>
-      <div class="living">
-        <h2>Living Here</h2>
-        <ul>
-          <li>
-            <img class="svg" src="svg.svg" alt="svg ikonica" /> beautiful scenic nature
-          </li>
-          <li>
-            <img class="svg" src="svg.svg" alt="svg ikonica" /> unique lifestyle
-          </li>
-          <li>
-            <img class="svg" src="svg.svg" alt="svg ikonica" /> clean ecological environment
-          </li>
-          <li>
-            <img class="svg" src="svg.svg" alt="svg ikonica" /> usage of the EURO currency
-          </li>
-          <li>
-            <img class="svg" src="svg.svg" alt="svg ikonica" /> excellent climate
-          </li>
-          <li>
-            <img class="svg" src="svg.svg" alt="svg ikonica" /> being able to enjoy everything the lake has to offer
-          </li>
-          <li>
-            <img class="svg" src="svg.svg" alt="svg ikonica" /> amusement parks
-          </li>
-          <li>
-            <img class="svg" src="svg.svg" alt="svg ikonica" />  walks along the lake
-          </li>
-        </ul>
-
-        <div class="quote">
-          <p>
-            «You are not buying a house. <br>You are buying a lifestyle. »
-          </p>
-          <img src="images/realestate.jpg" alt="" />
+          <div class="right-item">
+            <h2 id="why-us">Why Us?</h2>
+          </div>
+          
         </div>
-      </div>
-      <svg
-        id="wave4"
-        style="transform: rotate(180deg); transition: 0.3s"
-        viewBox="0 0 1440 140"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <defs>
-          <linearGradient id="sw-gradient-3" x1="0" x2="0" y1="1" y2="0">
-            <stop stop-color="rgba(52, 77, 103, 1)" offset="0%"></stop>
-            <stop stop-color="rgba(52, 77, 103, 1)" offset="100%"></stop>
-          </linearGradient>
-        </defs>
-        <path
-          style="transform: translate(0, 0px); opacity: 1"
-          fill="url(#sw-gradient-0)"
-          d="M0,70L40,65.3C80,61,160,51,240,49C320,47,400,51,480,44.3C560,37,640,19,720,28C800,37,880,75,960,91C1040,107,1120,103,1200,100.3C1280,98,1360,98,1440,81.7C1520,65,1600,33,1680,32.7C1760,33,1840,65,1920,72.3C2000,79,2080,61,2160,49C2240,37,2320,33,2400,42C2480,51,2560,75,2640,70C2720,65,2800,33,2880,32.7C2960,33,3040,65,3120,70C3200,75,3280,51,3360,46.7C3440,42,3520,56,3600,65.3C3680,75,3760,79,3840,79.3C3920,79,4000,75,4080,63C4160,51,4240,33,4320,25.7C4400,19,4480,23,4560,25.7C4640,28,4720,28,4800,35C4880,42,4960,56,5040,58.3C5120,61,5200,51,5280,58.3C5360,65,5440,89,5520,91C5600,93,5680,75,5720,65.3L5760,56L5760,140L5720,140C5680,140,5600,140,5520,140C5440,140,5360,140,5280,140C5200,140,5120,140,5040,140C4960,140,4880,140,4800,140C4720,140,4640,140,4560,140C4480,140,4400,140,4320,140C4240,140,4160,140,4080,140C4000,140,3920,140,3840,140C3760,140,3680,140,3600,140C3520,140,3440,140,3360,140C3280,140,3200,140,3120,140C3040,140,2960,140,2880,140C2800,140,2720,140,2640,140C2560,140,2480,140,2400,140C2320,140,2240,140,2160,140C2080,140,2000,140,1920,140C1840,140,1760,140,1680,140C1600,140,1520,140,1440,140C1360,140,1280,140,1200,140C1120,140,1040,140,960,140C880,140,800,140,720,140C640,140,560,140,480,140C400,140,320,140,240,140C160,140,80,140,40,140L0,140Z"
-        ></path>
-      </svg>
 
-      <!-- CARDS -->
-      <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')">
-          Show all
-        </button>
-        <button class="btn" onclick="filterSelection('location1')">
-          Lugano
-        </button>
-        <button class="btn" onclick="filterSelection('location2')">
-          Steyn City
-        </button>
-        <button class="btn" onclick="filterSelection('location3')">
-          Lake Garda
-        </button>
-      </div>
+        <div class="living-here">
+          <h2>Living here you get</h2>
+          <ul>
+            <li><img class="svg" src="images/svg.svg" alt="svg ikonica"> beautiful scenic nature</li>
+            <li><img class="svg" src="images/svg.svg" alt="svg ikonica"> unique lifestyle</li>
+            <li><img class="svg" src="images/svg.svg" alt="svg ikonica"> clean ecological environment</li>
+            <li><img class="svg" src="images/svg.svg" alt="svg ikonica"> usage of the EURO currency</li>
+            <li><img class="svg" src="images/svg.svg" alt="svg ikonica"> excellent climate</li>
+            <li><img class="svg" src="images/svg.svg" alt="svg ikonica"> being able to enjoy everything the lake has to offer</li>
+            <li><img class="svg" src="images/svg.svg" alt="svg ikonica"> amusement parks</li>
+            <li><img class="svg" src="images/svg.svg" alt="svg ikonica">  walks along the lake</li>
+          </ul>
+        </div>
 
-      <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
-      <div class="cardContainer ">
-        <div class="filterDiv location1">
-          <div class="card">
-            <img src="images/mountainMajesty.jpg" alt="Article" />
-            <div class="description">
-              <h5>Price: $50.000000</h5>
-              <h4 class="cardTitle">Mountain Majesty</h4>
-              <p>
-                Beds: 4 Baths: 4.5 Living: 650 square meter Lot size: 1,027
-                square meter <br />
-                Lugano, Switzerland
-              </p>
+        <div class="quote-flex-container">
+          <div class="quote-left-item">
+            <p>«You are not buying a house. <br>You are buying a lifestyle. »</p>
+          </div>
+          <div class="quote-right-item">
+            <img src="images/realestate.jpg" alt="Building image" />
+          </div>
+        </div>
+
+        <!-- CARDS -->
+        <div id="myBtnContainer" class="my-Btn-Container">
+          <button class="btn active" onclick="filterSelection('all')">
+            Show all
+          </button>
+          <button class="btn" onclick="filterSelection('location1')">
+            Lugano
+          </button>
+          <button class="btn" onclick="filterSelection('location2')">
+            Steyn City
+          </button>
+          <button class="btn" onclick="filterSelection('location3')">
+            Lake Garda
+          </button>
+        </div>
+
+          <div class="cardContainer ">
+            <div class="filterDiv location1">
+              <div class="card">
+                <img src="images/mountainMajesty.jpg" alt="Article" />
+                <div class="description">
+                  <h5>Price: $50.000000</h5>
+                  <h4 class="cardTitle">Mountain Majesty</h4>
+                  <p>
+                    Beds: 4 Baths: 4.5 Living: 650 square meter Lot size: 1,027
+                    square meter <br />
+                    Lugano, Switzerland
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="filterDiv location1 ">
+              <div class="card">
+                <img src="images/elm.jpeg" alt="Article" />
+                <div class="description">
+                  <h5>Price: $60.00000000</h5>
+                  <h4 class="cardTitle">Elm Villa</h4>
+                  <p>
+                    Beds: 4 Baths: 4.5 Living: 650 square meter Lot size: 1,027
+                    square meter <br />
+                    Lugano, Switzerland
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="filterDiv location3">
+              <div class="card">
+                <img
+                  src="images/villaSierraSky.jpg"
+                  alt="Article"
+                  id="villaSierraSky"
+                />
+                <div class="description">
+                  <h5>Price: $70.0000000</h5>
+                  <h4 class="cardTitle">Villa Sierra Sky</h4>
+                  <p>
+                    Beds: 4 Baths: 4.5 Living: 650 square meter Lot size: 1,027
+                    square meter <br />
+                    Lake Garda, Italy
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="filterDiv location2">
+              <div class="card">
+                <img src="images/villaSeaLaVie.jpg" alt="Article" />
+                <div class="description">
+                  <h5>Price: $80.0000000</h5>
+                  <h4 class="cardTitle">Villa Sea La Vie</h4>
+                  <p>
+                    Beds: 4 Baths: 4.5 Living: 650 square meter Lot size: 1,027
+                    square meter <br />
+                    Steyn City,South Africa.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="filterDiv location1 ">
-          <div class="card">
-            <img src="images/elm.jpeg" alt="Article" />
-            <div class="description">
-              <h5>Price: $60.00000000</h5>
-              <h4 class="cardTitle">Elm Villa</h4>
-              <p>
-                Beds: 4 Baths: 4.5 Living: 650 square meter Lot size: 1,027
-                square meter <br />
-                Lugano, Switzerland
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="filterDiv location3">
-          <div class="card">
-            <img
-              src="images/villaSierraSky.jpg"
-              alt="Article"
-              id="villaSierraSky"
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'?>
+          <svg
+            class="top-arrow"
+            id="Layer_1"
+            style="enable-background: new 0 0 512 512"
+            version="1.1"
+            viewBox="0 0 512 512"
+            width="512px"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <polygon
+              points="396.6,352 416,331.3 256,160 96,331.3 115.3,352 256,201.5 "
             />
-            <div class="description">
-              <h5>Price: $70.0000000</h5>
-              <h4 class="cardTitle">Villa Sierra Sky</h4>
-              <p>
-                Beds: 4 Baths: 4.5 Living: 650 square meter Lot size: 1,027
-                square meter <br />
-                Lake Garda, Italy
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="filterDiv location2">
-          <div class="card">
-            <img src="images/villaSeaLaVie.jpg" alt="Article" />
-            <div class="description">
-              <h5>Price: $80.0000000</h5>
-              <h4 class="cardTitle">Villa Sea La Vie</h4>
-              <p>
-                Beds: 4 Baths: 4.5 Living: 650 square meter Lot size: 1,027
-                square meter <br />
-                Steyn City,South Africa.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'?>
-      <svg
-        class="top-arrow"
-        id="Layer_1"
-        style="enable-background: new 0 0 512 512"
-        version="1.1"
-        viewBox="0 0 512 512"
-        width="512px"
-        xml:space="preserve"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-      >
-        <polygon
-          points="396.6,352 416,331.3 256,160 96,331.3 115.3,352 256,201.5 "
-        />
-      </svg>
-    Top</button>
+          </svg>Top
+        </button>
 
-    <svg
-      id="wave5"
-      style="transform: rotate(0deg); transition: 0.3s"
-      viewBox="0 0 1440 140"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <defs>
-        <linearGradient id="sw-gradient-4" x1="0" x2="0" y1="1" y2="0">
-          <stop stop-color="rgba(52, 77, 103, 1)" offset="0%"></stop>
-          <stop stop-color="rgba(52, 77, 103, 1)" offset="100%"></stop>
-        </linearGradient>
-      </defs>
-      <path
-        style="transform: translate(0, 0px); opacity: 1"
-        fill="url(#sw-gradient-0)"
-        d="M0,70L40,65.3C80,61,160,51,240,49C320,47,400,51,480,44.3C560,37,640,19,720,28C800,37,880,75,960,91C1040,107,1120,103,1200,100.3C1280,98,1360,98,1440,81.7C1520,65,1600,33,1680,32.7C1760,33,1840,65,1920,72.3C2000,79,2080,61,2160,49C2240,37,2320,33,2400,42C2480,51,2560,75,2640,70C2720,65,2800,33,2880,32.7C2960,33,3040,65,3120,70C3200,75,3280,51,3360,46.7C3440,42,3520,56,3600,65.3C3680,75,3760,79,3840,79.3C3920,79,4000,75,4080,63C4160,51,4240,33,4320,25.7C4400,19,4480,23,4560,25.7C4640,28,4720,28,4800,35C4880,42,4960,56,5040,58.3C5120,61,5200,51,5280,58.3C5360,65,5440,89,5520,91C5600,93,5680,75,5720,65.3L5760,56L5760,140L5720,140C5680,140,5600,140,5520,140C5440,140,5360,140,5280,140C5200,140,5120,140,5040,140C4960,140,4880,140,4800,140C4720,140,4640,140,4560,140C4480,140,4400,140,4320,140C4240,140,4160,140,4080,140C4000,140,3920,140,3840,140C3760,140,3680,140,3600,140C3520,140,3440,140,3360,140C3280,140,3200,140,3120,140C3040,140,2960,140,2880,140C2800,140,2720,140,2640,140C2560,140,2480,140,2400,140C2320,140,2240,140,2160,140C2080,140,2000,140,1920,140C1840,140,1760,140,1680,140C1600,140,1520,140,1440,140C1360,140,1280,140,1200,140C1120,140,1040,140,960,140C880,140,800,140,720,140C640,140,560,140,480,140C400,140,320,140,240,140C160,140,80,140,40,140L0,140Z"
-      ></path>
-    </svg>
-    <footer>
-      <div class="social-media">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-linkedin"></a>
-        <a href="https://github.com/nejlaBelagosi" class="fa fa-github" style="font-size: 48px"></a>
+        <div class="bottom-container">
+            <footer>
+              <div class="social-media">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="https://github.com/nejlaBelagosi" class="fa fa-github" style="font-size: 48px"></a>
+              </div>
+              <div class="footerItems">
+                <a href="#about-us">About Us</a>
+                <a href="#our-projects">Our Projects</a>
+                <a href="#great-location">Great Location</a>
+                <a href="#why-us">Why Us</a>
+                <a href="contact.html">Contact Us</a>
+              </div>
+            
+              <div class="text-center p-4">
+                © 2022 | Copyright:
+                <a href="#">Nejla B.</a>
+              </div>
+                </footer>
       </div>
-      <div class="footerItems">
-        <a href="#about-us">About Us</a>
-        <a href="#our-projects">Our Projects</a>
-        <a href="#great-location">Great Location</a>
-        <a href="#why-us">Why Us</a>
-        <a href="contact.html">Contact Us</a>
-      </div>
-
-      <div class="text-center p-4">
-        © 2022 | Copyright:
-        <a href="#">Nejla B.</a>
-      </div>
-  </footer>
+      
 
    <!-- Java script Libraries -->
    <script src="main.js"></script>

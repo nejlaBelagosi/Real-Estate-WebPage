@@ -1,0 +1,328 @@
+/* color paletu pronaci */
+:root{
+    --container-color: rgba(52, 77, 103, 1);
+    --container-contrast: #EEEEEE;
+    --nav-link: #DDDDDD;
+    --hr-color: #FAD6A5;
+    --headings: #7B8FA1;
+    --white: white;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+}
+
+/*----------
+    HEADER
+------------ */
+header {
+    background-color: var(--container-color);
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.25rem;
+    color:var(--white);
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color:var(--hr-color);
+} 
+
+
+/*----------
+    TOGGLER 
+------------*/
+button{
+    padding: 20px 40px;
+    text-align: center;
+    border:none; 
+    justify-content: center;
+}
+  button a{
+    color:white;
+    font-size:0.875rem;
+    text-decoration:none;
+    font-weight: normal;
+}
+  button:hover{
+    background-color:var(--hr-color);
+}
+
+
+/* TOP-CONTAINER */
+
+.top-container{
+    position:relative;
+    /* min-width:100%; */
+    width:100%;
+    min-height: 90vh;
+    background-color: var(--container-color);
+    z-index: -2;
+    right: 0;
+}
+
+.flex-container{
+    display:flex;
+    /* position:absolute; */
+    z-index: -2;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: normal;
+    text-align: left;
+    font-family: "Rubik", sans-serif;
+    /* padding-bottom: 100px; */
+    flex-direction: row;
+}
+.top-container h1 {
+    margin-left:2%;
+    font-weight:600;
+    font-size:5rem;
+}
+.top-container p{
+    height: 100%;
+    max-width: 700px;
+    font-weight: normal;
+    font-size:1.1em;
+    overflow-wrap: break-word;
+    margin:5px 0;
+}
+.top-container img{
+    /* min-width:320px; */
+    margin:0 10px; 
+    justify-self: center;
+    align-self: center;
+    width:90%; 
+
+}
+/* popraviti hover */
+.top-container img:hover{    
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+.row{
+    /* display: flex; */
+    justify-self: center;
+    align-self: center;
+    padding:0 50px;
+    flex:50%;
+}
+.column{
+    justify-self: center;
+    align-self: center;
+    /* padding-right: 50px; */
+    flex:50%;
+}
+
+/*--------------------
+    MIDDLE CONTAINER 
+---------------------*/
+
+.middle-container{
+    width:100%;
+    min-height: 20vh;
+    position:relative;
+    /* min-width:320px; */
+    /* display: flex;
+    flex-direction: row; */
+
+}
+.middle-flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+}
+.row1{
+   flex:20%;
+}
+.row1 iframe{
+    width:460px;
+    height:80vh
+}
+
+.row2{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    /* align-items: center; */
+    flex:20%;
+    height: 80vh;
+    padding:0 15px;
+    position: relative;
+}
+.row2 h2{
+    font-size:3rem;
+    /* position: absolute;
+    top:180px; */
+    /* align-self: center; */
+}
+.row2 ul{
+    list-style: none;
+    /* position: absolute;
+    bottom:40px; */
+    padding-left: 0px; 
+}
+.row2 ul li a{
+    text-decoration: none;
+    color:black;
+    font-size:1.1rem;
+    line-height: 3;
+}
+.row2 ul li a:hover{
+    color:var(--hr-color);
+}
+.row2 svg{
+    width:20px;
+}
+.row3{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding:0 15px;
+    position: relative;
+    background-color: #DDDDDD;
+    height: 80vh;
+    flex:20%;
+}
+
+.row3 h2{
+    font-size:3rem;
+    /* position: absolute;
+    top:180px; */
+    margin-left: 10px;
+}
+.row3 p{
+    max-width: 700px;
+    margin:0 10px;
+}
+#hello{
+    /* position:absolute;
+    bottom: 170px;; */
+    font-size:1.1rem;
+}
+#paragraph{
+    /* position:absolute;
+    bottom: 70px;; */
+    font-size:1.1rem;
+}
+.row3 a {
+    /* position: absolute;
+    bottom:20px;
+    margin-left:10px; */
+    border: 1px solid #080606;
+    background-color: var(--nav-link);
+    margin-top:20px;
+    width:20%;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    color:rgb(3, 3, 3);
+    text-decoration: none;
+}
+.row3 a:hover {
+    color:black;
+    background-color:var(--hr-color)
+}
+
+/* form{
+    border: 1px solid var(--container-color);
+    border-left:5px solid var(--container-color);
+  
+    /* flex-direction: row; 
+    /* margin-top: -262px;; 
+    /* margin-left:300px; 
+  
+}
+.form input  , .form textarea{
+    margin:1% 2%;
+    border-left:3px solid var(--container-color);
+    width:100%;
+}
+#send{
+    all:unset;
+    width:80px;
+    height: 30px;
+    margin-left: 2%;
+    text-align: center;
+    color:var(--container-contrast);
+    background-color: var(--container-color);
+    text-transform: uppercase;
+    font-weight:bold;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+  
+#send:hover{
+  background-color:var(--hr-color);
+} */
+
+/*-------------------
+    BOTTOM CONTAINER 
+--------------------*/
+
+ 
+
+@media (max-width:798px){
+    .flex-container{
+        width:100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .column img{
+
+        margin:0 65px;
+    }
+    .top-container h1{
+        font-size:3rem;
+        height: 100%;
+    }
+    .top-container img{
+        width: 70%;
+    }
+    .top-container img:hover{
+        transform: scale(0.8);
+    }
+    .card h2{
+        font-size:1.5625px;
+    }
+    .middle-flex-container iframe{
+        display:none;
+    }
+    .row1, .row2,.row3{
+        width:100%;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: left;
+    }
+    .row2{
+        position:relative;
+        height:50vh;
+        left: 0;
+        margin-right:200px;
+    }
+    .row2 h2, .row2 p{
+        padding-right: 200px;
+    }
+    .row3{
+        height:50vh;
+    }
+    .row2 .row3 h2{
+        padding-bottom:0;
+        font-size:1rem;
+        height: 100%;
+    }
+    #hello #paragraph{
+        padding-bottom: 0;
+        font-size:0.8rem;
+        height: 100%;
+    }
+}  
+       
