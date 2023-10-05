@@ -2,8 +2,10 @@
 1. popraviti reverse na mobile
 2. urediti u laptop view --> UTADILA
 4. urediti naslov i paragraf
-3. dodati contact infos
+3. dodati contact infos => dodala
 4. font-family odrediti
+5. formu i contact us urediti za mobile -> uradila
+6. urediti dizajn forme i buttona
  */
 :root {
   --white: white;
@@ -100,140 +102,249 @@ button:hover {
 /*---------------------- 
     MIDDLE CONTAINER 
 ----------------------*/
-.middle-container{
-    background-image: url(../images/backgroundPic.jpg);
-    background-repeat: repeat;
-    background-size: cover;
+.middle-container {
+  background-image: url(../images/backgroundPic.jpg);
+  background-repeat: repeat;
+  background-size: cover;
 }
-.middle-container h1{
-    font-size: 3rem;
-    text-align: center;
-    padding-top:30px;
-    color: var(--headings);
+.middle-container h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 30px;
+  color: var(--headings);
 }
-.middle-container p{
-    font-size:1.4rem;
-    text-align: center;
-    line-break: break-word;
-    line-height: 1.2;
-    width: 60%;
-    margin: 30px auto;
-    color: var(--paragraphs);
+.middle-container p {
+  font-size: 1.4rem;
+  text-align: center;
+  line-break: break-word;
+  line-height: 1.2;
+  width: 60%;
+  margin: 30px auto;
+  color: var(--paragraphs);
 }
-.flex-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* align-items: flex-end; */
-    width: 90%;
-    margin: 0 auto;
-  }
-  .left-item, .right-item{
-    width: 60%;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: flex-end; */
+  width: 90%;
+  margin: 0 auto;
+}
+.left-item,
+.right-item {
+  width: 60%;
 }
 
-.left-item img{
-    width:70%;
-    height: 386px;
-    padding-top: 10px;
+.left-item img {
+  width: 70%;
+  height: 386px;
+  padding-top: 10px;
 }
-.right-item img{
-    width:70%;
-    height: 386px;
+.right-item img {
+  width: 70%;
+  height: 386px;
 }
-.left-item img:hover{
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2);
+.left-item img:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
 }
-.right-item img:hover{
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
-    transform: scale(1.2);
+.right-item img:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
 }
-.right-item h1{
+.right-item h1 {
   font-size: 3rem;
   justify-self: center;
   align-self: center;
 }
-.right-item a{
-    text-decoration: none;
-     color: var(--headings);
-     width: 60%;
+.right-item a {
+  text-decoration: none;
+  color: var(--headings);
+  width: 60%;
 }
-.left-item h1{
-    font-size: 3rem;
+.left-item h1 {
+  font-size: 3rem;
 }
-.left-item a{
-    text-decoration: none;
-    color: var(--headings);
+.left-item a {
+  text-decoration: none;
+  color: var(--headings);
+}
+.right-item p {
+  font-size: 1.5rem;
+  color: var(--paragraphs);
+}
+.left-item p {
+  font-size: 1.4rem;
+  color: var(--paragraphs);
+}
 
+/*-------------------
+  BOTTOM CONTAINER
+-------------------- */
+
+.contact-flex-container {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* justify-content:center;
+  align-items: center; */
+  background-color: #f2e8dd;
 }
-.right-item p{
+.contact-right-items ul li {
+  list-style: none;
+  margin-left: 0;
+}
+.contact-right-items a {
+  text-decoration: none;
+  line-height: 3;
+  color: var(--headings);
+}
+.contact-right-items a:hover {
+  color: var(--overlay);
+}
+.contact-right-items {
+  /* width: 50%; */
+  padding-top: 50px;
+  margin-left: 100px;
+}
+.contact-right-items h2 {
+  padding-left: 30px;
+}
+
+.contact-left-item {
+  width: 50%;
+  padding-top: 50px;
+  /* margin-left: 150px; */
+  text-align: center;
+  background-color: #f2e8dd;
+}
+.contact-left-item h2 {
+  padding-left: 135px;
+  text-align: left;
+}
+.contact-left-item input {
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  background-color: #f2e8dd;
+}
+::placeholder {
+  font-size: 14px;
+}
+.contact-left-item textarea {
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-left: 10px;
+  width: 423px;
+  background-color: #f2e8dd;
+}
+#submit {
+  border-radius: 3px;
+  padding: 5px 20px;
+  margin-right: 320px;
+  margin-bottom: 20px;
+  background-color: var(--button-color);
+  color: var(--white);
+}
+#submit:hover {
+  background-color: var(--overlay);
+}
+
+.svg-icon {
+  height: 30px;
+}
+
+@media (max-width: 798px) {
+  .middle-container h1 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .middle-container p {
+    font-size: 16px;
+    text-align: center;
+    line-break: break-word;
+    line-height: 1.2;
+    padding: 0px 40px;
+    width: 100%;
+    margin: 30px auto;
+    color: var(--paragraphs);
+  }
+  .flex-container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .right-item,
+  .left-item {
+    width: 100%;
+  }
+  .right-item h1,
+  p {
+    text-align: center;
+    color: var(--paragraphs);
+  }
+  .left-item h1,
+  p {
+    text-align: center;
+    color: var(--paragraphs);
+  }
+  .right-item img {
+    margin: 0 20%;
+  }
+  .left-item img {
+    margin: 0 20%;
+  }
+  .right-item h1 {
     font-size: 1.5rem;
+    color: var(--headings);
+  }
+  .left-item h1 {
+    font-size: 1.5rem;
+    color: var(--headings);
+  }
+  .right-item p {
+    font-size: 14px;
     color: var(--paragraphs);
-}
-.left-item p{
-    font-size: 1.4rem;
+  }
+  .left-item p {
+    font-size: 14px;
     color: var(--paragraphs);
-}
-
-
-@media (max-width:798px){
-    .middle-container h1{
-        font-size: 30px;
-        text-align: center;
-        padding-top:30px;
-    }
-    .middle-container p{
-        font-size:16px;
-        text-align: center;
-        line-break: break-word;
-        line-height: 1.2;
-        padding: 0px 40px;
-        width: 100%;
-        margin: 30px auto;
-        color: var(--paragraphs);
-    }
-    .flex-container{
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .right-item, .left-item{
-        width: 100%;
-    }
-    .right-item h1,p{
-        text-align: center;
-        color: var(--paragraphs);
-    }
-    .left-item h1,p{
-        text-align: center;
-        color: var(--paragraphs);
-    }
-    .right-item img{
-        margin: 0 20%;
-    }
-    .left-item img{
-        margin:0 20%;
-    }
-    .right-item h1{
-        font-size: 1.5rem;
-        color: var(--headings);
-    }
-    .left-item h1{
-        font-size: 1.5rem;
-        color: var(--headings);
-    }
-    .right-item p{
-        font-size: 14px;
-        color: var(--paragraphs);
-    }
-    .left-item p{
-        font-size: 14px;
-        color: var(--paragraphs);
-    }
-    /* .carousel-inner{
+  }
+  .carousel-item img {
+    height: 100%;
+  }
+  /* .carousel-inner{
         width: 100%;
         height:700px;
     } */
+  .contact-flex-container {
+    flex-direction: column;
+    /* width: 100%; */
+  }
+  .contact-left-item {
+    margin-left: 100px;
+  }
+  .contact-left-item h2 {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 5px;
+  }
+  /* .contact-right-items{
+    margin-left: 0;
+  } */
+  .contact-left-item textarea {
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-left: 10px;
+    width: 200px;
+    background-color: rgb(235, 226, 226);
+  }
+  .contact-left-item input {
+    margin-bottom: 10px;
+  }
+  #submit {
+    margin: 0 auto;
+  }
 }

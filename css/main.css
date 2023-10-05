@@ -4,8 +4,8 @@
 1. ODREDIM FONT FAMILY
 2. ODREDIM BOJE ---> URADILA
 3.POPRAVIM LISTU DA POCINJU S LIJEVE STRANE I JEDNA ISPOD DRUGE U MOBILE DEVICES
-4.DIZAJN DA UREDIM DODAM BACKGROUNDS ITD
-5.SMANJIM KONTEJNERE SIRINU
+4.DIZAJN DA UREDIM DODAM BACKGROUNDS ITD uradila
+5.SMANJIM KONTEJNERE SIRINU projects
 6.naslovi popraviti u nekim uredjajima se poklapa
  */
 :root{
@@ -357,6 +357,7 @@ path{
 .living-here {
     text-align: center;
     margin-top: 40px;
+
 }
 .svg{
     width:10px;
@@ -372,11 +373,16 @@ path{
 }
 
 /* quote */
-
+.quote-container{
+    background-image: url(../images/bgquote.jpg);
+    mix-blend-mode: overlay;
+    background-size: cover;
+}
 .quote-flex-container{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    
 }
 
 .quote-left-item{
@@ -536,8 +542,9 @@ path{
     margin-top: 300px;
     /* background-color: #3b5998; */
 }
+
 footer{
-    background-color: #007bb5;;
+    background-color: var(--headings);
     text-align: center;
     position:absolute;
     bottom: 0;
@@ -574,16 +581,29 @@ footer{
     width: 50px;
 }
   
-.footerItems {
+.footer-items {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.footerItems a {
+.footer-items a {
     margin-left: 20px;
     text-decoration: none;
     color: white;
     font-size: 18px;
+}
+.footer-items a:hover {
+    color:var(--overlay);
+}
+.text-center a{
+    text-decoration: none;
+    color:white;
+}
+.text-center a:hover{
+    color:var(--overlay);
+}
+.text-center {
+    color:var(--white);
 }
   
 
